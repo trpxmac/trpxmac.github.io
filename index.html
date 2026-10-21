@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teerapong Kaewchuai (ธีรพงษ์ แก้วช่วย) — Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Teerapong Kaewchuai (ธีรพงษ์ แก้วช่วย) — Full-Stack Web Developer & Medical Informatics Intern at Bangkok Hospital Siriroj (BDMS Group)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Kanit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #090d16;
+      color: #f1f5f9;
+      font-family: 'Inter', 'Kanit', sans-serif;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(52, 211, 153, 0.35);
+      box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.12);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.16) 0%, rgba(6, 182, 212, 0.08) 35%, transparent 70%);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Top Navbar -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-[#090d16]/85 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 font-bold text-lg tracking-tight text-white">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center text-slate-950 font-extrabold text-sm">TK</span>
+        <span>Teerapong<span class="text-emerald-400">.dev</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#projects" class="hover:text-emerald-400 transition">ผลงานโปรเจกต์ (Projects)</a>
+        <a href="#experience" class="hover:text-emerald-400 transition">ประสบการณ์สหกิจศึกษา</a>
+        <a href="#skills" class="hover:text-emerald-400 transition">ทักษะ (Tech Stack)</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">ติดต่อ (Contact)</a>
+      </nav>
+      <div class="flex items-center gap-2.5">
+        <a href="https://github.com/trpxmac" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 text-xs sm:text-sm font-medium text-white transition border border-white/10">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:telpls50@gmail.com"
+           class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm transition">
+          <span>ติดต่อสมัครงาน</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative hero-glow pt-14 pb-16 sm:pt-20 sm:pb-20 border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-xs sm:text-sm font-medium mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>สหกิจศึกษา 2 ภาคการศึกษา (30 สัปดาห์: 20 เม.ย. – 13 พ.ย. 2569) • โรงพยาบาลกรุงเทพสิริโรจน์ (BDMS)</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        Teerapong Kaewchuai
+        <span class="block text-xl sm:text-3xl font-semibold text-slate-300 mt-2">(นายธีรพงษ์ แก้วช่วย)</span>
+      </h1>
+
+      <p class="mt-5 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
+        นักพัฒนาซอฟต์แวร์ <strong class="text-white">Full-Stack Web Developer</strong> จากหลักสูตรเทคโนโลยีสารสนเทศและนวัตกรรมดิจิทัล มหาวิทยาลัยวลัยลักษณ์ มีประสบการณ์ออกแบบและพัฒนาระบบสารสนเทศทางการแพทย์ใช้งานจริงที่ <strong class="text-emerald-400">แผนก Medical Informatics Development โรงพยาบาลกรุงเทพสิริโรจน์ (BDMS Group)</strong> รวม 6 ระบบ (พัฒนาเดี่ยวแบบ End-to-End 4 ระบบ และพัฒนาร่วมกับทีม 2 ระบบ)
+      </p>
+
+      <!-- Key Metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 max-w-3xl">
+        <div class="glass-card rounded-xl p-4">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">6</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-0.5">ระบบงานโรงพยาบาลที่พัฒนา</div>
+        </div>
+        <div class="glass-card rounded-xl p-4">
+          <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">4</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-0.5">Solo Full-Stack Projects</div>
+        </div>
+        <div class="glass-card rounded-xl p-4">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">30 สัปดาห์</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-0.5">สหกิจศึกษาต่อเนื่อง 2 เทอม</div>
+        </div>
+        <div class="glass-card rounded-xl p-4">
+          <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">Full-Stack</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-0.5">React • Node.js • Python • SQL</div>
+        </div>
+      </div>
+
+      <!-- Contact Bar -->
+      <div class="flex flex-wrap items-center gap-3 mt-8">
+        <a href="#projects" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm transition shadow-lg shadow-emerald-500/20">
+          ดูผลงานทั้ง 6 โปรเจกต์ ↓
+        </a>
+        <button onclick="copyEmail()" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-white text-sm font-medium transition flex items-center gap-2">
+          <span>📧 telpls50@gmail.com</span>
+          <span id="copy-badge" class="text-xs px-2 py-0.5 rounded bg-white/10 text-emerald-300">คัดลอก</span>
+        </button>
+        <a href="https://github.com/trpxmac" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 text-sm font-medium transition">
+          github.com/trpxmac ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+      <div>
+        <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Internship Portfolio Showcase</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">ผลงานโปรเจกต์ระหว่างฝึกงานสหกิจศึกษา (6 ระบบ)</h2>
+        <p class="text-slate-400 text-sm mt-1">แบ่งเป็นโปรเจกต์ที่รับผิดชอบพัฒนาคนเดียวครบวงจร (Solo) 4 ระบบ และโปรเจกต์พัฒนาร่วมกับเพื่อน (Team) 2 ระบบ</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="inline-flex p-1 rounded-xl bg-slate-900 border border-white/10 self-start">
+        <button onclick="filterProjects('all')" id="btn-all" class="px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-emerald-500 text-slate-950 transition">
+          ทั้งหมด (6)
+        </button>
+        <button onclick="filterProjects('solo')" id="btn-solo" class="px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition">
+          👤 ทำคนเดียว (4)
+        </button>
+        <button onclick="filterProjects('team')" id="btn-team" class="px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition">
+          👥 ทำกับเพื่อน (2)
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="projects-grid">
+
+      <!-- 1. Cost Estimation MVP (SOLO) -->
+      <article data-category="solo" class="glass-card rounded-2xl overflow-hidden flex flex-col transition duration-300">
+        <div class="relative h-52 bg-slate-900 overflow-hidden group cursor-pointer" onclick="openLightbox('assets/cost_estimator.png', 'Hospital Cost Estimation MVP — หน้าประเมินค่ารักษาพยาบาล')">
+          <img src="assets/cost_estimator.png" alt="Hospital Cost Estimation MVP" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent"></div>
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-emerald-500/90 text-slate-950 text-xs font-bold">
+            👤 Solo Full-Stack Project
+          </span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-black/70 text-white text-xs border border-white/15">
+            🔍 คลิกดูภาพหน้าจอขยาย
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-bold text-white">1. Hospital Cost Estimation MVP</h3>
+          <p class="text-xs text-emerald-400 font-medium mt-0.5">ระบบประเมินค่ารักษาพยาบาลผู้ป่วยเคมีบำบัดและเวชภัณฑ์ทางการแพทย์</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-300 flex-1">
+            <li>• คำนวณราคายาและเวชภัณฑ์แยกตามสิทธิ์ผู้ป่วย 4 ประเภท (<code class="text-emerald-300">OPD</code>, <code class="text-emerald-300">IPD</code>, <code class="text-emerald-300">OPDTR</code>, <code class="text-emerald-300">IPDTR</code>)</li>
+            <li>• ระบบจัดชุดรายการยา (<strong class="text-white">Item Set Folding</strong>) และพักรายการชั่วคราว (<strong class="text-white">Draft Staging</strong>)</li>
+            <li>• รองรับ <strong class="text-white">Offline LocalStorage Fallback & Auto-Migration</strong> ซิงค์ขึ้น PostgreSQL อัตโนมัติ พร้อมออกใบประเมินราคา PDF</li>
+          </ul>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">React 18</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Vite</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Tailwind CSS v4</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Node.js / Express</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">PostgreSQL</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Vitest</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-white/10">
+            <a href="https://github.com/trpxmac/cost-estimation-mvp" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm transition">
+              🔗 ดู Source Code (GitHub)
+            </a>
+            <button onclick="openLightbox('assets/cost_dashboard.png', 'Hospital Cost Estimation MVP — หน้าแดชบอร์ดและสถิติ')" class="px-3.5 py-2 rounded-lg bg-white/10 hover:bg-white/15 text-white text-xs sm:text-sm transition">
+              🖼️ ดูภาพ Dashboard
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Doctor Leave @ LINE OA (SOLO) -->
+      <article data-category="solo" class="glass-card rounded-2xl overflow-hidden flex flex-col transition duration-300">
+        <div class="relative h-52 bg-slate-900 overflow-hidden group cursor-pointer" onclick="openLightbox('assets/doctor_leave_richmenu.jpg', 'Doctor Leave @ LINE OA — ระบบแจ้งลาแพทย์ผ่าน LINE LIFF & Rich Menu')">
+          <img src="assets/doctor_leave_richmenu.jpg" alt="Doctor Leave @ LINE OA" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent"></div>
+          <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-emerald-500/90 text-slate-950 text-xs font-bold">
+            👤 Solo Full-Stack Project
+          </span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-black/70 text-white text-xs border border-white/15">
+            🔍 คลิกดูภาพหน้าจอขยาย
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-bold text-white">2. Doctor Leave @ LINE OA</h3>
+          <p class="text-xs text-emerald-400 font-medium mt-0.5">ระบบยื่นใบลาและอนุมัติการลาสำหรับแพทย์ผ่าน LINE LIFF & Admin Portal</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-300 flex-1">
+            <li>• แพทย์ยื่นใบลาผ่าน <strong class="text-white">LINE LIFF Mobile UI</strong> ได้ใน 60 วินาที พร้อมตรวจสอบโควตาแพทย์รายแผนกแบบเรียลไทม์</li>
+            <li>• ส่งแจ้งเตือนและกด <strong class="text-white">1-Click Approve</strong> ผ่าน <strong class="text-white">LINE Flex Message แบบ 1-on-1</strong> (ยึดหลัก PDPA 100%)</li>
+            <li>• ระบบจัดการลาฉุกเฉิน (<code class="text-emerald-300">Same-Day Emergency Leave</code>), Web Admin Portal และบันทึก Audit Trail ครบทุกขั้นตอน</li>
+          </ul>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">React 19</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">LINE LIFF SDK</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">LINE Flex Message</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Node.js / Express 5</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Supabase (PostgreSQL)</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-white/10">
+            <a href="https://github.com/trpxmac/doctor-leave-line" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm transition">
+              🔗 ดู Source Code (GitHub)
+            </a>
+            <button onclick="openLightbox('assets/doctor_leave_richmenu.jpg', 'Doctor Leave @ LINE OA — LINE Rich Menu UI')" class="px-3.5 py-2 rounded-lg bg-white/10 hover:bg-white/15 text-white text-xs sm:text-sm transition">
+              🖼️ ดูตัวอย่าง UI
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. iPad Document e-Sign Pipeline (SOLO) -->
+      <article data-category="solo" class="glass-card rounded-2xl overflow-hidden flex flex-col transition duration-300">
+        <div class="relative h-52 bg-gradient-to-br from-slate-900 via-cyan-950/60 to-emerald-950/50 p-5 flex flex-col justify-between overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-md bg-emerald-500/90 text-slate-950 text-xs font-bold">
+              👤 Solo Full-Stack Project
+            </span>
+            <span class="text-xs text-cyan-300 font-mono bg-cyan-500/10 px-2.5 py-1 rounded border border-cyan-500/20">iMed (HIS) → iPad → EDSCare</span>
+          </div>
+          <div class="my-auto grid grid-cols-3 gap-2 text-center">
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <div class="text-xs text-slate-400">Step 1</div>
+              <div class="text-xs font-bold text-white mt-0.5">PyMuPDF Ingest</div>
+              <div class="text-[11px] text-emerald-400">สกัดข้อมูลจาก iMed</div>
+            </div>
+            <div class="bg-white/5 border border-emerald-500/30 rounded-lg p-2.5">
+              <div class="text-xs text-slate-400">Step 2</div>
+              <div class="text-xs font-bold text-white mt-0.5">iPad e-Sign UI</div>
+              <div class="text-[11px] text-emerald-400">Apple Pencil 3 ช่อง</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <div class="text-xs text-slate-400">Step 3</div>
+              <div class="text-xs font-bold text-white mt-0.5">Pure Vector PDF</div>
+              <div class="text-[11px] text-emerald-400">ส่งเข้า EDSCare</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-bold text-white">3. iPad Document e-Sign Pipeline</h3>
+          <p class="text-xs text-emerald-400 font-medium mt-0.5">ระบบลงนามเอกสารดิจิทัลบน iPad เชื่อมโยงระบบโรงพยาบาล iMed (HIS) และ EDSCare (EHR)</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-300 flex-1">
+            <li>• สถาปัตยกรรม <strong class="text-white">Pure PDF Vector Pipeline</strong> คมชัดระดับเวชระเบียน ขนาดไฟล์เล็ก (~14–300 KB)</li>
+            <li>• บริการสกัดข้อความดิจิทัล 100% จากใบประเมินราคาด้วย <strong class="text-white">Python (PyMuPDF)</strong> คำนวณเงินมัดจำ 80% อัตโนมัติ</li>
+            <li>• รองรับการเขียนหมายเหตุและลงนาม 3 ช่องด้วย Apple Pencil พร้อมฝัง <strong class="text-white">Audit Trail</strong> และระบบแจ้งเตือนเอกสารตกค้าง</li>
+          </ul>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">React 18</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Python</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">PyMuPDF (fitz)</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">jsPDF</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Signature Pad</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Tailwind CSS v4</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-white/10">
+            <a href="https://github.com/trpxmac/ipad-document-sign" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm transition">
+              🔗 ดู Source Code (GitHub)
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Nurse Scheduling MVP (SOLO) -->
+      <article data-category="solo" class="glass-card rounded-2xl overflow-hidden flex flex-col transition duration-300">
+        <div class="relative h-52 bg-gradient-to-br from-slate-900 via-indigo-950/50 to-slate-900 p-5 flex flex-col justify-between overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-md bg-emerald-500/90 text-slate-950 text-xs font-bold">
+              👤 Solo Full-Stack Project
+            </span>
+            <span class="text-xs text-indigo-300 font-mono bg-indigo-500/10 px-2.5 py-1 rounded border border-indigo-500/20">AI Auto-Roster & OT</span>
+          </div>
+          <div class="my-auto bg-white/5 border border-white/10 rounded-xl p-3 text-xs">
+            <div class="flex justify-between text-slate-400 mb-2 font-medium">
+              <span>Monthly Nurse Roster View</span>
+              <span class="text-emerald-400">เช้า (M) • บ่าย (A) • ดึก (N) • OT</span>
+            </div>
+            <div class="grid grid-cols-7 gap-1 text-center font-mono text-[11px]">
+              <div class="bg-emerald-500/20 text-emerald-300 py-1 rounded">M</div>
+              <div class="bg-emerald-500/20 text-emerald-300 py-1 rounded">M</div>
+              <div class="bg-amber-500/20 text-amber-300 py-1 rounded">A</div>
+              <div class="bg-amber-500/20 text-amber-300 py-1 rounded">A</div>
+              <div class="bg-purple-500/20 text-purple-300 py-1 rounded">N</div>
+              <div class="bg-slate-700/50 text-slate-400 py-1 rounded">OFF</div>
+              <div class="bg-cyan-500/20 text-cyan-300 py-1 rounded">M+OT</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-bold text-white">4. Nurse Scheduling MVP</h3>
+          <p class="text-xs text-emerald-400 font-medium mt-0.5">ระบบจัดตารางเวรพยาบาลรายเดือนอัจฉริยะและคำนวณชั่วโมงทำงาน/OT</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-300 flex-1">
+            <li>• จัดตารางเวรพยาบาลรายเดือนอัตโนมัติ (<strong class="text-white">AI Auto-Scheduling</strong>) ตามเงื่อนไขและโควตาเวรเช้า/บ่าย/ดึก</li>
+            <li>• ตารางปฏิทินแบบ <strong class="text-white">Ultra-Compact Monthly Roster</strong> และมุมมองตารางรายบุคคลในหน้าจอเดียว</li>
+            <li>• คำนวณชั่วโมงปฏิบัติงานและ OT รายวันเทียบเป้าหมายอัตโนมัติ พร้อมระบบสั่งพิมพ์และส่งออก PDF</li>
+          </ul>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">React 19</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Vite</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Node.js / Express 5</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">PostgreSQL</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Recharts</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-white/10">
+            <a href="https://github.com/trpxmac/nurse-scheduling-mvp" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm transition">
+              🔗 ดู Source Code (GitHub)
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. BSI-Stock (TEAM) -->
+      <article data-category="team" class="glass-card rounded-2xl overflow-hidden flex flex-col transition duration-300">
+        <div class="relative h-52 bg-gradient-to-br from-slate-900 via-cyan-950/50 to-slate-900 p-5 flex flex-col justify-between overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-md bg-cyan-400 text-slate-950 text-xs font-bold">
+              👥 Team Co-Developed Project
+            </span>
+            <span class="text-xs text-emerald-300 font-mono bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">🌐 Live on Vercel</span>
+          </div>
+          <div class="my-auto grid grid-cols-3 gap-2 text-center">
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <div class="text-xs font-bold text-white">CODE128</div>
+              <div class="text-[11px] text-cyan-300 mt-0.5">สร้าง/พิมพ์บาร์โค้ด</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <div class="text-xs font-bold text-white">QR / Camera</div>
+              <div class="text-[11px] text-cyan-300 mt-0.5">สแกนเบิก-จ่าย</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2.5">
+              <div class="text-xs font-bold text-white">Low-Stock Alert</div>
+              <div class="text-[11px] text-cyan-300 mt-0.5">แจ้งเตือนของใกล้หมด</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-bold text-white">5. BSI-Stock — Inventory Management</h3>
+          <p class="text-xs text-cyan-400 font-medium mt-0.5">ระบบบริหารจัดการคลังเวชภัณฑ์และสแกนบาร์โค้ด (พัฒนาร่วมกับทีม)</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-300 flex-1">
+            <li>• จัดการคลังสินค้าและพัสดุหลายไซส์/หมวดหมู่ พร้อมคำนวณยอดสต็อกคงเหลือแบบเรียลไทม์</li>
+            <li>• สร้างและดาวน์โหลดบาร์โค้ด (<code class="text-cyan-300">CODE128</code>) และสแกนบาร์โค้ดผ่านกล้องมือถือหรือเว็บแคม</li>
+            <li>• แดชบอร์ดสรุปภาพรวมสต็อกรายวัน กราฟสัดส่วนสินค้า แจ้งเตือนเมื่อสินค้าต่ำกว่าเกณฑ์ และส่งออกไฟล์ Excel</li>
+          </ul>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">React 19</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Node.js / Express 5</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">PostgreSQL</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">JsBarcode & html5-qrcode</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Chart.js</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-white/10">
+            <a href="https://bsi-stock.vercel.app" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold text-xs sm:text-sm transition">
+              🌐 เปิดเว็บตัวอย่าง (Live Demo)
+            </a>
+            <a href="https://github.com/FEEKNK/BSI-Stock" target="_blank" rel="noopener" class="px-3.5 py-2 rounded-lg bg-white/10 hover:bg-white/15 text-white text-xs sm:text-sm transition">
+              🔗 GitHub (Team Repo)
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. HeightGrowthApp / GrowthFit (TEAM) -->
+      <article data-category="team" class="glass-card rounded-2xl overflow-hidden flex flex-col transition duration-300">
+        <div class="relative h-52 bg-gradient-to-br from-slate-900 via-teal-950/50 to-slate-900 p-5 flex flex-col justify-between overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-md bg-cyan-400 text-slate-950 text-xs font-bold">
+              👥 Team Co-Developed Project
+            </span>
+            <span class="text-xs text-teal-300 font-mono bg-teal-500/10 px-2.5 py-1 rounded border border-teal-500/20">Clinical Fitness Screening</span>
+          </div>
+          <div class="my-auto grid grid-cols-2 gap-2.5 text-center">
+            <div class="bg-white/5 border border-white/10 rounded-lg p-3">
+              <div class="text-xs font-bold text-white">กลุ่มอายุ 4–6 ปี</div>
+              <div class="text-[11px] text-teal-300 mt-0.5">Play-based Screen (4 บททดสอบ)</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-lg p-3">
+              <div class="text-xs font-bold text-white">กลุ่มอายุ 7–14 ปี</div>
+              <div class="text-[11px] text-teal-300 mt-0.5">Physical Fitness (7 บททดสอบ + PDF)</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-bold text-white">6. HeightGrowthApp (GrowthFit)</h3>
+          <p class="text-xs text-cyan-400 font-medium mt-0.5">ระบบคัดกรองสมรรถภาพทางกายเพื่อกระตุ้นความสูงสำหรับเด็ก (พัฒนาร่วมกับทีม)</p>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-300 flex-1">
+            <li>• คำนวณอายุ/BMI และแบ่งกลุ่มรายการทดสอบสมรรถภาพทางกายอัตโนมัติ (กลุ่ม 4–6 ปี และ 7–14 ปี)</li>
+            <li>• ประมวลผลเทียบเกณฑ์มาตรฐานทางคลินิกกายภาพบำบัดและเวชศาสตร์การกีฬาตามเพศและช่วงอายุ</li>
+            <li>• ออกรายงานสรุปผลการประเมินในรูปแบบ <strong class="text-white">PDF Report (ฝังฟอนต์ไทย + QR Code)</strong> พร้อมใช้งานบน PC และมือถือ</li>
+          </ul>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">JavaScript (ES6+)</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">HTML5 / CSS3 Glassmorphism</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">jsPDF (Thai Font)</span>
+            <span class="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300">Responsive UI</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t border-white/10">
+            <a href="https://github.com/FEEKNK/HeightGrowthApp" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold text-xs sm:text-sm transition">
+              🔗 ดู Source Code (Team Repo)
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="py-16 border-t border-white/5 bg-slate-950/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="glass-card rounded-2xl p-6 sm:p-8">
+        <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Work Experience</span>
+        <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">ประสบการณ์ปฏิบัติงานสหกิจศึกษา</h3>
+        <div class="mt-5 border-l-2 border-emerald-500/40 pl-4 space-y-3">
+          <div class="inline-block px-2.5 py-0.5 rounded bg-emerald-500/15 text-emerald-300 text-xs font-semibold">
+            20 เมษายน – 13 พฤศจิกายน 2569 (2 ภาคการศึกษา • 30 สัปดาห์)
+          </div>
+          <h4 class="text-lg font-bold text-white">Medical Informatics Developer Intern</h4>
+          <p class="text-sm text-slate-300 font-medium">แผนก Medical Informatics Development • โรงพยาบาลกรุงเทพสิริโรจน์ (Bangkok Hospital Siriroj — BDMS Group)</p>
+          <ul class="text-sm text-slate-300 space-y-1.5 pt-1">
+            <li>• วิเคราะห์ปัญหาหน้างานร่วมกับบุคลากรทางการแพทย์ (พยาบาล, เภสัชกร, ฝ่ายการแพทย์, แผนกประเมินราคา)</li>
+            <li>• ออกแบบสถาปัตยกรรมฐานข้อมูลและพัฒนาเว็บแอปพลิเคชันแบบ Full-Stack จำนวน 6 ระบบ</li>
+            <li>• เชื่อมต่อระบบโรงพยาบาล (HIS iMed / EHR EDSCare) และ LINE Official Account (LIFF / Flex Message) ภายใต้มาตรฐาน PDPA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6 sm:p-8" id="skills">
+        <span class="text-cyan-400 text-xs font-bold uppercase tracking-wider">Education & Skills</span>
+        <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">การศึกษาและทักษะทางเทคนิค</h3>
+        <div class="mt-5 pb-5 border-b border-white/10">
+          <h4 class="text-base font-bold text-white">มหาวิทยาลัยวลัยลักษณ์ (Walailak University)</h4>
+          <p class="text-sm text-slate-300 mt-0.5">วิทยาศาสตรบัณฑิต สาขาเทคโนโลยีสารสนเทศและนวัตกรรมดิจิทัล (สำนักวิชาสารสนเทศศาสตร์)</p>
+        </div>
+        <div class="mt-5 space-y-3 text-sm">
+          <div>
+            <span class="text-slate-400 font-medium">Frontend:</span>
+            <span class="text-white ml-1">React 18/19, Vite, JavaScript (ES6+), Tailwind CSS v4, HTML5/CSS3, LINE LIFF SDK</span>
+          </div>
+          <div>
+            <span class="text-slate-400 font-medium">Backend & API:</span>
+            <span class="text-white ml-1">Node.js, Express 5, Python (PyMuPDF), RESTful API, LINE Messaging API</span>
+          </div>
+          <div>
+            <span class="text-slate-400 font-medium">Database & Testing:</span>
+            <span class="text-white ml-1">PostgreSQL, Supabase, LocalStorage Offline Sync, Vitest (Unit Testing), Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="py-14 border-t border-white/10 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-white">พร้อมร่วมงานและสัมภาษณ์งานทันที</h2>
+      <p class="text-slate-400 text-sm mt-2">สามารถติดต่อผ่านทางอีเมลหรือดูโค้ดต้นฉบับทั้งหมดได้ที่ GitHub ตลอด 24 ชั่วโมงครับ</p>
+      <div class="flex flex-wrap justify-center gap-3 mt-6">
+        <a href="mailto:telpls50@gmail.com" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm transition">
+          📧 telpls50@gmail.com
+        </a>
+        <a href="https://github.com/trpxmac" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm transition">
+          💻 github.com/trpxmac
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 mt-8">© 2026 Teerapong Kaewchuai (ธีรพงษ์ แก้วช่วย). Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="max-w-5xl w-full bg-slate-900 border border-white/15 rounded-2xl overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
+        <span id="lightbox-title" class="text-sm font-semibold text-white"></span>
+        <button onclick="closeLightbox()" class="text-slate-400 hover:text-white text-sm px-2.5 py-1 rounded bg-white/5">✕ ปิดหน้าต่าง</button>
+      </div>
+      <div class="p-2 max-h-[80vh] overflow-auto flex justify-center bg-black">
+        <img id="lightbox-img" src="" alt="Preview" class="max-h-[75vh] w-auto object-contain rounded" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filterProjects(cat) {
+      const cards = document.querySelectorAll('#projects-grid article');
+      cards.forEach(c => {
+        if (cat === 'all' || c.dataset.category === cat) {
+          c.classList.remove('hidden');
+        } else {
+          c.classList.add('hidden');
+        }
+      });
+      ['all', 'solo', 'team'].forEach(id => {
+        const btn = document.getElementById('btn-' + id);
+        if (id === cat) {
+          btn.className = 'px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-emerald-500 text-slate-950 transition';
+        } else {
+          btn.className = 'px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition';
+        }
+      });
+    }
+
+    function copyEmail() {
+      navigator.clipboard.writeText('telpls50@gmail.com');
+      const badge = document.getElementById('copy-badge');
+      badge.textContent = 'คัดลอกแล้ว ✓';
+      setTimeout(() => { badge.textContent = 'คัดลอก'; }, 2000);
+    }
+
+    function openLightbox(src, title) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-title').textContent = title;
+      document.getElementById('lightbox').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
