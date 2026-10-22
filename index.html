@@ -569,88 +569,162 @@
           <div>
             <span class="text-cyan-400 text-xs font-bold uppercase tracking-wider">Activities & Professional Exposure</span>
             <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">กิจกรรม การสัมมนา และการศึกษาดูงาน (Activities & Site Visits)</h2>
-            <p class="text-slate-400 text-sm mt-1">การเข้าร่วมสัมมนาระดับผู้บริหารร่วมกับ Big Tech และการศึกษาดูงานระบบ Enterprise ชั้นนำ</p>
+            <p class="text-slate-400 text-sm mt-1">ประสบการณ์เข้าร่วมสัมมนาระดับผู้บริหารร่วมกับ Big Tech และการศึกษาดูงานระบบ Enterprise ชั้นนำ</p>
           </div>
           <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold self-start">
-            🚀 Industry & Tech Exposure
+            🚀 3 กิจกรรมสำคัญ
           </span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+          
           <!-- Card 1: BDMS x Microsoft Executive AI Forum -->
-          <div class="bg-white/5 border border-white/10 hover:border-emerald-400/40 rounded-2xl p-6 transition flex flex-col justify-between group">
+          <div class="bg-white/5 border border-white/10 hover:border-emerald-400/40 rounded-2xl p-5 transition flex flex-col justify-between group">
             <div>
               <div class="flex items-center justify-between gap-2 mb-3">
                 <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                  🗓️ 31 สิงหาคม 2569
+                  🗓️ 31 ส.ค. 2569
                 </span>
                 <span class="text-xs text-slate-400">📍 รพ.กรุงเทพภูเก็ต</span>
               </div>
-              <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition leading-snug">
-                BDMS in Phuket x Microsoft Executive AI Forum: Shaping the Future of Healthcare with AI
+              <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-emerald-300 transition leading-snug">
+                BDMS in Phuket x Microsoft Executive AI Forum
               </h3>
-              <p class="text-xs font-medium text-emerald-400 mt-1.5">
-                เครือโรงพยาบาลกรุงเทพ จังหวัดภูเก็ต (BDMS) ร่วมกับ Microsoft
+              <p class="text-xs font-medium text-emerald-400 mt-1">
+                เครือ รพ.กรุงเทพ ภูเก็ต (BDMS) ร่วมกับ Microsoft
               </p>
-              <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                ได้รับโอกาสเข้าร่วมงานสัมมนาเชิงยุทธศาสตร์และพิธีลงนามบันทึกข้อตกลง (MOU) ร่วมศึกษาทิศทางการขับเคลื่อนปัญญาประดิษฐ์ทางการแพทย์ (<strong class="text-cyan-300">Healthcare AI</strong>) และคลาวด์โซลูชันเพื่อยกระดับการให้บริการผู้ป่วยและการปฏิบัติงานของบุคลากรทางการแพทย์สู่มาตรฐานสากล
+              <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                เข้าร่วมสัมมนาและพิธีลงนามบันทึกข้อตกลง <strong class="text-cyan-300">“Shaping the Future of Healthcare with AI”</strong> ร่วมกับ Microsoft เพื่อศึกษาแนวทางการขับเคลื่อนปัญญาประดิษฐ์ทางการแพทย์และคลาวด์โซลูชัน
               </p>
 
-              <!-- Image Container / Placeholder -->
-              <div id="photo-box-microsoft" onclick="checkActivityPhoto('assets/activities/microsoft_ai_forum.jpg', 'BDMS Phuket x Microsoft Executive AI Forum')" class="mt-4 rounded-xl border border-dashed border-white/20 bg-slate-900/60 hover:bg-slate-900/90 aspect-video flex flex-col items-center justify-center p-4 text-center cursor-pointer transition overflow-hidden relative group/img">
-                <img id="img-microsoft" src="assets/activities/microsoft_ai_forum.jpg" onerror="this.style.display='none'; document.getElementById('placeholder-microsoft').style.display='flex';" class="w-full h-full object-cover rounded-lg hidden" alt="BDMS Phuket x Microsoft AI Forum" />
-                <div id="placeholder-microsoft" class="flex flex-col items-center justify-center text-slate-400 text-xs">
-                  <span class="text-3xl mb-1.5 opacity-70 group-hover/img:scale-110 transition">📸</span>
-                  <span class="font-medium text-white/90">ภาพบรรยากาศงานสัมมนา</span>
-                  <span class="text-[11px] text-slate-500 mt-0.5">(พร้อมใส่รูป: assets/activities/microsoft_ai_forum.jpg)</span>
+              <!-- Main Cover Photo -->
+              <div onclick="openLightbox('assets/activities/bdms-microsoft-1.jpg', 'BDMS in Phuket x Microsoft Executive AI Forum')"
+                   class="mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900 aspect-video cursor-pointer relative group/img shadow-md">
+                <img src="assets/activities/bdms-microsoft-1.jpg" alt="BDMS x Microsoft AI Forum" class="w-full h-full object-cover group-hover/img:scale-105 transition duration-300" />
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition flex items-center justify-center text-white text-xs font-medium gap-1.5 backdrop-blur-[2px]">
+                  <span>🔍 คลิกดูภาพขยาย</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails Grid -->
+              <div class="grid grid-cols-4 gap-2 mt-2">
+                <div onclick="openLightbox('assets/activities/bdms-microsoft-2.jpg', 'บรรยากาศงาน BDMS x Microsoft (2)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bdms-microsoft-2.jpg" alt="BDMS x Microsoft 2" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
+                </div>
+                <div onclick="openLightbox('assets/activities/bdms-microsoft-3.jpg', 'บรรยากาศงาน BDMS x Microsoft (3)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bdms-microsoft-3.jpg" alt="BDMS x Microsoft 3" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
+                </div>
+                <div onclick="openLightbox('assets/activities/bdms-microsoft-4.jpg', 'บรรยากาศงาน BDMS x Microsoft (4)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bdms-microsoft-4.jpg" alt="BDMS x Microsoft 4" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
+                </div>
+                <div onclick="openLightbox('assets/activities/bdms-microsoft-5.jpg', 'บรรยากาศงาน BDMS x Microsoft (5)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bdms-microsoft-5.jpg" alt="BDMS x Microsoft 5" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
                 </div>
               </div>
             </div>
 
-            <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between">
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
               <a href="https://www.facebook.com/phukethospital/posts/1362633152749859" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 font-medium transition">
-                <span>📰 ข่าวประชาสัมพันธ์อย่างเป็นทางการ (Facebook)</span>
+                <span>📰 ข่าวประชาสัมพันธ์ (FB)</span>
                 <span>↗</span>
               </a>
-              <span class="text-[11px] text-slate-500 font-mono">Healthcare AI</span>
+              <span class="text-[11px] text-slate-400 font-mono">5 รูปภาพ</span>
             </div>
           </div>
 
-          <!-- Card 2: GoSoft & Bitkub (Digital ASEAN) -->
-          <div class="bg-white/5 border border-white/10 hover:border-cyan-400/40 rounded-2xl p-6 transition flex flex-col justify-between group">
+          <!-- Card 2: GoSoft Visit -->
+          <div class="bg-white/5 border border-white/10 hover:border-cyan-400/40 rounded-2xl p-5 transition flex flex-col justify-between group">
             <div>
               <div class="flex items-center justify-between gap-2 mb-3">
                 <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-400/30">
-                  🗓️ 21–22 พฤศจิกายน 2567
+                  🗓️ 21 พ.ย. 2567
                 </span>
                 <span class="text-xs text-slate-400">📍 กรุงเทพมหานคร</span>
               </div>
-              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition leading-snug">
-                ศึกษาดูงานนวัตกรรมดิจิทัล: GoSoft (CP ALL) &amp; Bitkub Capital Group (Digital ASEAN)
+              <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-cyan-300 transition leading-snug">
+                ศึกษาดูงาน บริษัท โกซอฟต์ (ประเทศไทย) จำกัด
               </h3>
-              <p class="text-xs font-medium text-cyan-400 mt-1.5">
-                มหาวิทยาลัยวลัยลักษณ์ • สำนักวิชาสารสนเทศศาสตร์
+              <p class="text-xs font-medium text-cyan-400 mt-1">
+                GoSoft (Thailand) • เครือ CP ALL Group
               </p>
-              <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                เข้าศึกษาดูงานสถาปัตยกรรมระบบคลาวด์และ Enterprise Architecture ระดับองค์กร ณ <strong class="text-white">บริษัท โกซอฟต์ (ประเทศไทย) จำกัด (CP ALL Group)</strong> และศึกษาเทคโนโลยี FinTech, Blockchain และ Web3 ณ <strong class="text-white">กลุ่มบริษัท บิทคับ (Bitkub Capital Group)</strong> พร้อมเข้าร่วมชมนิทรรศการนวัตกรรมในงาน Digital ASEAN
+              <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                เข้าศึกษาดูงานสถาปัตยกรรมระบบคลาวด์และ Enterprise Architecture ระดับประเทศของ GoSoft ศึกษาการออกแบบระบบที่รองรับทราฟฟิกมหาศาลและระบบปฏิบัติการค้าปลีกอัจฉริยะ
               </p>
 
-              <!-- Image Container / Placeholder -->
-              <div id="photo-box-gosoft" onclick="checkActivityPhoto('assets/activities/gosoft_bitkub_visit.jpg', 'ศึกษาดูงาน GoSoft & Bitkub (Digital ASEAN)')" class="mt-4 rounded-xl border border-dashed border-white/20 bg-slate-900/60 hover:bg-slate-900/90 aspect-video flex flex-col items-center justify-center p-4 text-center cursor-pointer transition overflow-hidden relative group/img">
-                <img id="img-gosoft" src="assets/activities/gosoft_bitkub_visit.jpg" onerror="this.style.display='none'; document.getElementById('placeholder-gosoft').style.display='flex';" class="w-full h-full object-cover rounded-lg hidden" alt="GoSoft & Bitkub Visit" />
-                <div id="placeholder-gosoft" class="flex flex-col items-center justify-center text-slate-400 text-xs">
-                  <span class="text-3xl mb-1.5 opacity-70 group-hover/img:scale-110 transition">🏢</span>
-                  <span class="font-medium text-white/90">ภาพบรรยากาศการศึกษาดูงาน</span>
-                  <span class="text-[11px] text-slate-500 mt-0.5">(พร้อมใส่รูป: assets/activities/gosoft_bitkub_visit.jpg)</span>
+              <!-- Main Cover Photo -->
+              <div onclick="openLightbox('assets/activities/gosoft-1.jpg', 'ศึกษาดูงาน บริษัท โกซอฟต์ (ประเทศไทย) จำกัด')"
+                   class="mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900 aspect-video cursor-pointer relative group/img shadow-md">
+                <img src="assets/activities/gosoft-1.jpg" alt="GoSoft Visit" class="w-full h-full object-cover group-hover/img:scale-105 transition duration-300" />
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition flex items-center justify-center text-white text-xs font-medium gap-1.5 backdrop-blur-[2px]">
+                  <span>🔍 คลิกดูภาพขยาย</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails Grid -->
+              <div class="grid grid-cols-4 gap-2 mt-2">
+                <div onclick="openLightbox('assets/activities/gosoft-2.jpg', 'บรรยากาศศึกษาดูงาน GoSoft (2)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-cyan-400 transition">
+                  <img src="assets/activities/gosoft-2.jpg" alt="GoSoft 2" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
                 </div>
               </div>
             </div>
 
-            <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between">
-              <span class="text-xs text-slate-400">Enterprise &amp; FinTech Architecture</span>
-              <span class="text-[11px] text-slate-500 font-mono">Company Visit</span>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs text-slate-400">Enterprise Architecture</span>
+              <span class="text-[11px] text-slate-400 font-mono">2 รูปภาพ</span>
             </div>
           </div>
+
+          <!-- Card 3: Bitkub Visit & Digital ASEAN -->
+          <div class="bg-white/5 border border-white/10 hover:border-emerald-400/40 rounded-2xl p-5 transition flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  🗓️ 22 พ.ย. 2567
+                </span>
+                <span class="text-xs text-slate-400">📍 กรุงเทพมหานคร</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-emerald-300 transition leading-snug">
+                ศึกษาดูงาน กลุ่มบริษัท บิทคับ (Bitkub Capital Group)
+              </h3>
+              <p class="text-xs font-medium text-emerald-400 mt-1">
+                Bitkub Capital Group Holdings &amp; Digital ASEAN
+              </p>
+              <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                เข้าศึกษาดูงานนวัตกรรม FinTech, Blockchain และเทคโนโลยี Web3 ณ สำนักงานใหญ่ Bitkub พร้อมชมนิทรรศการเทคโนโลยีดิจิทัลในงาน Digital ASEAN
+              </p>
+
+              <!-- Main Cover Photo -->
+              <div onclick="openLightbox('assets/activities/bitkub-1.jpg', 'ศึกษาดูงาน กลุ่มบริษัท บิทคับ (Bitkub Capital Group)')"
+                   class="mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900 aspect-video cursor-pointer relative group/img shadow-md">
+                <img src="assets/activities/bitkub-1.jpg" alt="Bitkub Visit" class="w-full h-full object-cover group-hover/img:scale-105 transition duration-300" />
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition flex items-center justify-center text-white text-xs font-medium gap-1.5 backdrop-blur-[2px]">
+                  <span>🔍 คลิกดูภาพขยาย</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails Grid -->
+              <div class="grid grid-cols-4 gap-2 mt-2">
+                <div onclick="openLightbox('assets/activities/bitkub-2.jpg', 'บรรยากาศศึกษาดูงาน Bitkub (2)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bitkub-2.jpg" alt="Bitkub 2" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
+                </div>
+                <div onclick="openLightbox('assets/activities/bitkub-3.jpg', 'บรรยากาศศึกษาดูงาน Bitkub (3)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bitkub-3.jpg" alt="Bitkub 3" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
+                </div>
+                <div onclick="openLightbox('assets/activities/bitkub-4.jpg', 'บรรยากาศศึกษาดูงาน Bitkub (4)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bitkub-4.jpg" alt="Bitkub 4" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
+                </div>
+                <div onclick="openLightbox('assets/activities/bitkub-5.jpg', 'บรรยากาศศึกษาดูงาน Bitkub (5)')" class="rounded-lg overflow-hidden border border-white/10 bg-slate-900 aspect-square cursor-pointer hover:border-emerald-400 transition">
+                  <img src="assets/activities/bitkub-5.jpg" alt="Bitkub 5" class="w-full h-full object-cover hover:scale-110 transition duration-200" />
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs text-slate-400">FinTech &amp; Web3</span>
+              <span class="text-[11px] text-slate-400 font-mono">5 รูปภาพ</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
